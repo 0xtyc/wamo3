@@ -1,36 +1,75 @@
-import className from 'classnames';
-import { useRouter } from 'next/router';
+import type { FC } from 'react';
 
 type IVerticalFeatureRowProps = {
   title: string;
   description: string;
-  image: string;
-  imageAlt: string;
-  reverse?: boolean;
+  date: Date;
+  index: number;
+  classNames?: string;
 };
 
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
-  const verticalFeatureClass = className(
-    'mt-20',
-    'flex',
-    'flex-wrap',
-    'items-center',
-    {
-      'flex-row-reverse': props.reverse,
-    },
-  );
+const VerticalFeatureRow: FC<IVerticalFeatureRowProps> = ({
+  title,
+  description,
+  date,
+  index,
+  classNames,
+}) => {
+  const weekdays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
 
-  const router = useRouter();
+  const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
 
   return (
-    <div className={verticalFeatureClass}>
-      <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
-      </div>
+    <div
+      className={`relative flex h-[334px] w-screen items-center justify-center p-8 text-white ${classNames}`}
+    >
+      <div className="flex">
+        <div className="w-1/3">
+          <div className="mx-20 flex flex-row space-x-6">
+            <div className="text-4xl font-bold text-white">Day {index}</div>
 
-      <div className="w-full p-6 sm:w-1/2">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+            <div className="pt-4 text-xl text-white">{title}</div>
+          </div>
+        </div>
+
+        <div className="w-2/3">
+          <div className="flex flex-col text-left">
+            <div className="text-xl font-bold">{weekdays[date.getDay()]}</div>
+            <div className="flex flex-row">
+              <div className="text-5xl font-bold">{date.getDate()}</div>
+              <span className="mx-2"></span>
+              <span className="text-5xl font-bold"> — </span>
+              <span className="mx-2"></span>
+              <div className="text-5xl font-bold">
+                {months[date.getMonth()]}
+              </div>
+            </div>
+            <div className="bottom-8 max-w-[80%] text-lg text-white">
+              {description}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
