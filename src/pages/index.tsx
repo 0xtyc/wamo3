@@ -12,27 +12,20 @@ const Index = () => {
       <Hero />
       <VerticalFeatureRow
         index={1}
-        title="加密朋克"
+        title="Cypherpunk"
         date={new Date('2024-11-06')}
-        description="1990 年代，因為有巨型的政府電信複合體，才有了密碼龐克運動，這時代的關鍵詞是全開放如OSS、強隱私如PGP、可互通如W3C、可協作如Git。"
+        description="Privacy-focused tools like VPN, E2EE, Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse."
         classNames="bg-[#E88736]"
       />
       <VerticalFeatureRow
         index={2}
-        title="加密社群"
+        title="Crypto Community"
         date={new Date('2024-11-07')}
-        description="2010 至2020 年代，因為有巨型的雲端封建體系，才有了加密社群。這時代的關鍵詞是數位身分如SSI，數位資產如DeFi，數位結社如DAO。"
+        description="Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse and VC; Digital Assets include DeFi used as hedges and tools against censorship; Digital Associations include DAOs."
         classNames="bg-[#46599D]"
       />
-      <VerticalFeatureRow
-        index={3}
-        title="密碼共生社會"
-        date={new Date('2024-11-08')}
-        description="2020年代以降，有沒有可能因為有巨型的「？？？」，加速下一個密碼共生社會的時代來臨？新時代很模糊，冰山一角的知道會是一個有效掌握密碼學工具的未來社群，但我們試圖伸手去指時，猜想的關鍵詞有自主世界、網路國家、再生合作社，但這只是猜想，需要大家來實踐與探索!"
-        classNames="bg-[#9A88B7]"
-      />
       <Section>
-        <div className="mx-auto flex w-[80%] flex-col space-y-10 text-center text-2xl">
+        <div className="flex w-full flex-col space-y-10 p-10 text-left font-mono text-2xl md:w-1/2">
           <div>
             <p>
               We stand <b>against</b> singular mechanisms, top-down approaches,
@@ -47,7 +40,7 @@ const Index = () => {
             </p>
           </div>
 
-          <p> -WAMO3</p>
+          <p className="text-right"> -WAMO3</p>
         </div>
       </Section>
       <Footer />
