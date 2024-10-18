@@ -1,3 +1,5 @@
+import { isMobile } from 'react-device-detect';
+
 interface IconLinkProps {
   src: string;
   alt: string;
@@ -18,8 +20,9 @@ const IconLink: React.FC<IconLinkProps> = ({
   return (
     <div
       className="mx-10 my-5 flex flex-row border-b p-5 hover:cursor-pointer hover:bg-gray-100 md:w-80"
-      onMouseEnter={onHover}
+      onMouseEnter={isMobile ? undefined : onHover}
       onClick={onClick}
+      onTouchStart={onHover}
     >
       <img src={src} alt={alt} className="w-24 p-4" />
       <p className="my-auto text-4xl" style={{ color }}>

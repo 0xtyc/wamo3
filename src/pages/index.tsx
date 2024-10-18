@@ -14,14 +14,14 @@ const Index = () => {
         title="Cypherpunk"
         date={new Date('2024-11-06')}
         description="Privacy-focused tools like VPN, E2EE, Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse."
-        classNames="bg-[#E88736]"
+        classNames="bg-orange-texture"
       />
       <VerticalFeatureRow
         index={2}
         title="Crypto Community"
         date={new Date('2024-11-07')}
         description="Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse and VC; Digital Assets include DeFi used as hedges and tools against censorship; Digital Associations include DAOs."
-        classNames="bg-[#46599D]"
+        classNames="bg-blue-texture"
       />
       <Footer />
     </div>

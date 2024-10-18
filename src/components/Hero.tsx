@@ -25,7 +25,7 @@ const Hero = () => (
               BEING SELF-GOVERNED
             </p>
             <p className="text-lg text-gray-500">Chiang Mai ---- 2024</p>
-            <p className="text-xl text-gray-500">Nov 06 - Nov 08</p>
+            <p className="text-xl text-gray-500">Nov 06 - Nov 07</p>
             <div className="my-10">
               <Button xl>APPLY</Button>
             </div>

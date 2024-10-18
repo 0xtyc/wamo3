@@ -30,13 +30,13 @@ const Footer = () => {
 
           <p className="text-right"> -WAMO3</p>
         </div>
-        <div className="relative flex flex-col items-center justify-center md:absolute md:right-10 md:top-12">
+        <div className="relative flex flex-col items-center justify-center md:absolute md:right-[10%] md:top-12">
           <div className="flex flex-col">
             <IconLink
               src="/assets/images/elephant.svg"
               alt="elephant"
               text="APPLY"
-              color="#E5761A" // Pass color prop
+              color="#E5761A"
               onClick={() => {
                 window.open('https://wamo3.org', '_blank');
               }}

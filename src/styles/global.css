@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.bg-orange-texture {
+    background-image: url('/assets/images/dayonebg1x.webp');
+}
+
+.bg-blue-texture {
+    background-image: url('/assets/images/daytwobg1x.webp');
+}
+
