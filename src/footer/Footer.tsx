@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div className="relative h-full">
-      <Section classNames="flex flex-col md:flex-row">
+      <Section classNames="flex flex-col md:flex-row max-w-6xl">
         <div className="syne-text z-10 flex w-full flex-col space-y-10 p-10 text-left text-2xl md:w-1/2">
           <div>
             <p>

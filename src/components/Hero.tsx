@@ -19,15 +19,15 @@ const Hero = () => (
             alt="logo"
             className="z-10 mx-auto w-[130px]"
           />
-          <div className="flex flex-col items-center justify-center text-center md:mt-10">
-            <p className="text-3xl text-white">THE ART OF</p>
-            <p className="text-5xl font-semibold text-white">
+          <div className="flex flex-col items-center justify-center text-center md:mt-6">
+            <p className="text-5xl font-semibold text-[#E57A29]">THE ART OF</p>
+            <p className="text-5xl font-semibold text-[#E57A29]">
               BEING SELF-GOVERNED
             </p>
-            <p className="text-lg text-gray-500">Chiang Mai ---- 2024</p>
-            <p className="text-xl text-gray-500">Nov 06 - Nov 07</p>
+            <p className="text-lg text-white">Chiang Mai</p>
+            <p className="text-lg text-white">2024 Nov 06 - Nov 07</p>
             <div className="my-10">
-              <Button xl>APPLY</Button>
+              <Button xl>APPLY NOW</Button>
             </div>
           </div>
         </div>

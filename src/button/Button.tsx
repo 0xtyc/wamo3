@@ -28,11 +28,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-xl {
-            @apply font-bold text-xl py-2 px-14;
+            @apply font-bold text-xl py-2 px-10;
           }
 
           .btn-primary {
-            @apply text-white bg-[#E57A29];
+            @apply bg-white text-[#E57A29];
           }
 
           .btn-primary:hover {
