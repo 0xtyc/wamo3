@@ -36,7 +36,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-[#E57A29];
+            @apply bg-[#E57A29] text-white cursor-pointer;
           }
         `}
       </style>

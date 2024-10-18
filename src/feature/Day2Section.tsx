@@ -3,7 +3,7 @@ const Day2Section = () => {
     <div
       className={`bg-blue-texture relative flex h-fit w-screen px-12 py-16 text-white md:px-32`}
     >
-      <div className="flex max-w-6xl flex-col">
+      <div className="mx-auto flex max-w-6xl flex-col">
         <div className="w-full items-center justify-center text-center md:items-end md:justify-end md:text-right">
           <div className="syne-text my-2 text-xl font-bold">
             Day two - Nov.⑦
