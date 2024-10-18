@@ -12,3 +12,30 @@
     background-image: url('/assets/images/daytwobg1x.webp');
 }
 
+.syne-text {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans-text {
+  font-family: "Work+Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syne-bold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.work-sans-text-bold {
+  font-family: "Work+Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
