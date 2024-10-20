@@ -1,5 +1,3 @@
-import { Button } from '@/button/Button';
-
 import { Background } from '../background/Background';
 
 const Hero = () => (
@@ -27,7 +25,12 @@ const Hero = () => (
             <p className="text-lg text-white">Chiang Mai</p>
             <p className="text-lg text-white">2024 Nov 06 - Nov 07</p>
             <div className="my-10">
-              <Button xl>APPLY NOW</Button>
+              <button
+                className="cursor-pointer rounded-full bg-white px-10 py-2 text-lg font-semibold text-[#E57A29] hover:bg-[#E57A29] hover:text-white"
+                onClick={() => window.open('https://lu.ma/wamo3', '_blank')}
+              >
+                APPLY NOW
+              </button>
             </div>
           </div>
         </div>

@@ -33,12 +33,12 @@ const Footer = () => {
         <div className="relative flex flex-col items-center justify-center md:absolute md:right-[10%] md:top-12">
           <div className="flex flex-col">
             <IconLink
-              src="/assets/images/elephant.svg"
+              src="/assets/images/animals/elephant.svg"
               alt="elephant"
               text="APPLY"
               color="#E5761A"
               onClick={() => {
-                window.open('https://wamo3.org', '_blank');
+                window.open('https://lu.ma/wamo3', '_blank');
               }}
               onHover={() => {
                 confetti.current?.addConfetti({
@@ -49,7 +49,7 @@ const Footer = () => {
               }}
             />
             <IconLink
-              src="/assets/images/hippo.svg"
+              src="/assets/images/animals/hippo.svg"
               alt="hippo"
               text="Telegram"
               onClick={() => {
@@ -64,7 +64,7 @@ const Footer = () => {
               }}
             />
             <IconLink
-              src="/assets/images/leopard.svg"
+              src="/assets/images/animals/leopard.svg"
               alt="leopard"
               text="X(Twitter)"
               onClick={() => {
