@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero';
+import AvenueSection from '@/feature/AvenuSection';
 import { TopicSection } from '@/feature/TopicSection';
 import Footer from '@/footer/Footer';
 import { Meta } from '@/layout/Meta';
@@ -30,6 +31,7 @@ const Index = () => {
         animals={['monkey', 'koala', 'anteater']}
         insertIndices={[10, 20, 2]}
       />
+      <AvenueSection />
       <Footer />
     </div>
   );
