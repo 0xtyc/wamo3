@@ -22,7 +22,7 @@ const TopicSection: React.FC<TopicSectionProps> = ({
       <img
         src={`/assets/images/animals/${animal}.svg`}
         alt="elephant"
-        className="mx-2 h-10"
+        className="mx-2 h-10 hover:animate-spin"
       />
     ) : null;
   };
