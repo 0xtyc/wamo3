@@ -26,7 +26,7 @@ const Index = () => {
       <TopicSection
         title="Crypto-Symbiotic Society"
         description="Envisioning future societies based on the foundations of network states, autonomous worlds, and regenerative cooperatives, with a strong emphasis on Sovereignty and Solidarity."
-        classNames="bg-[#A997C5] text-[#46599D]"
+        classNames="bg-green-texture text-[#1d4843]"
         animals={['monkey', 'koala', 'anteater']}
         insertIndices={[10, 20, 2]}
       />

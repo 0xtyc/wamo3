@@ -5,11 +5,20 @@
 @tailwind utilities;
 
 .bg-orange-texture {
-    background-image: url('/assets/images/dayonebg1x.webp');
+    background-image: url('/assets/images/orange-texture.webp');
+
 }
 
 .bg-blue-texture {
-    background-image: url('/assets/images/daytwobg1x.webp');
+    background-image: url('/assets/images/blue-texture.webp');
+}
+
+.bg-purple-texture {
+    background-image: url('/assets/images/purple-texture.webp');
+}
+
+.bg-green-texture {
+    background-image: url('/assets/images/green-texture.webp');
 }
 
 .syne-text {
