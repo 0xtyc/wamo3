@@ -2,13 +2,31 @@ interface TopicSectionProps {
   title: string;
   description: string;
   classNames?: string;
+  animals: string[];
+  insertIndices: number[];
 }
 
 const TopicSection: React.FC<TopicSectionProps> = ({
   title,
   description,
   classNames,
+  animals,
+  insertIndices,
 }) => {
+  const wordlist = description.split(' ');
+
+  const getInsertedAnimal = (index: number) => {
+    const animalIndex = insertIndices?.findIndex((i) => i === index);
+    const animal = animals?.[animalIndex];
+    return animal ? (
+      <img
+        src={`/assets/images/animals/${animal}.svg`}
+        alt="elephant"
+        className="mx-2 h-10"
+      />
+    ) : null;
+  };
+
   return (
     <div
       className={`relative flex h-fit w-screen px-4 py-16 md:px-32 ${classNames}`}
@@ -23,7 +41,13 @@ const TopicSection: React.FC<TopicSectionProps> = ({
         <div className="w-full py-5">
           <div className="flex flex-col items-center justify-center text-left md:items-end md:justify-end ">
             <div className="bottom-8 max-w-fit text-xl md:max-w-[60%]">
-              {description}
+              {wordlist.map((word, index) => (
+                <span key={index} className="inline-flex items-center">
+                  {`${word}`}
+                  {'\u00A0'}
+                  {getInsertedAnimal(index)}
+                </span>
+              ))}
             </div>
           </div>
         </div>

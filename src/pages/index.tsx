@@ -13,16 +13,22 @@ const Index = () => {
         title="Cyberpunk"
         description="Privacy-focused tools like VPN, E2EE, Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse."
         classNames="bg-orange-texture text-[#7E0F04]"
+        animals={['tiger', 'humound', 'peacock']}
+        insertIndices={[0, 15, 20]}
       />
       <TopicSection
         title="Crypto Community"
         description="Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse and VC; Digital Assets include DeFi used as hedges and tools against censorship; Digital Associations include DAOs."
         classNames="bg-blue-texture text-white"
+        animals={['rhino', 'crocodile', 'pig']}
+        insertIndices={[10, 20, 30]}
       />
       <TopicSection
         title="Crypto-Symbiotic Society"
         description="Envisioning future societies based on the foundations of network states, autonomous worlds, and regenerative cooperatives, with a strong emphasis on Sovereignty and Solidarity."
         classNames="bg-[#A997C5] text-[#46599D]"
+        animals={['monkey', 'koala', 'anteater']}
+        insertIndices={[10, 20, 2]}
       />
       <Footer />
     </div>
