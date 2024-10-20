@@ -29,11 +29,11 @@ const TopicSection: React.FC<TopicSectionProps> = ({
 
   return (
     <div
-      className={`relative flex h-fit w-screen px-4 py-16 md:px-32 ${classNames}`}
+      className={`relative flex h-fit w-screen px-4 py-24 md:px-32 ${classNames}`}
     >
       <div className="mx-auto flex max-w-5xl flex-col">
         <div className="w-full items-center justify-center text-center md:items-start md:justify-start md:text-left">
-          <div className="syne-bold w-full py-5 text-5xl md:max-w-[60%]">
+          <div className="syne-bold w-full py-5 text-5xl leading-[100%] md:text-[64px]">
             {title}
           </div>
         </div>

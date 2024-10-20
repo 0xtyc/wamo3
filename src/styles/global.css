@@ -18,10 +18,14 @@
 
 .bg-purple-texture {
     background-image: url('/assets/images/purple-texture.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .bg-green-texture {
     background-image: url('/assets/images/green-texture.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .bg-avenue {

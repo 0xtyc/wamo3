@@ -7,7 +7,7 @@ import { AppConfig } from '@/utils/AppConfig';
 
 const Index = () => {
   return (
-    <div className="work-sans-text text-gray-600 antialiased">
+    <div className="work-sans-text antialiased">
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <Hero />
       <TopicSection
@@ -20,7 +20,7 @@ const Index = () => {
       <TopicSection
         title="Crypto Community"
         description="Digital Identities include SSI, DID, and Tor; open-source initiatives such as Creative Commons, GPL, and BSD; and interoperability standards like OIDC, OAuth, and Fediverse and VC; Digital Assets include DeFi used as hedges and tools against censorship; Digital Associations include DAOs."
-        classNames="bg-blue-texture text-white"
+        classNames="bg-blue-texture text-[#FFE9E0]"
         animals={['rhino', 'crocodile', 'pig']}
         insertIndices={[10, 20, 30]}
       />
