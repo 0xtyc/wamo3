@@ -23,7 +23,7 @@ const Hero = () => (
               BEING SELF-GOVERNED
             </p>
             <p className="text-lg text-white">Chiang Mai</p>
-            <p className="text-lg text-white">2024 Nov 06 - Nov 07</p>
+            <p className="text-lg text-white">2024 Nov 05 - Nov 07</p>
             <div className="my-10">
               <button
                 className="cursor-pointer rounded-full bg-white px-10 py-2 text-lg font-semibold text-[#E57A29] hover:bg-[#E57A29] hover:text-white"
